@@ -178,7 +178,7 @@ nav .wrapper{
     border: 3px solid #ffffff4d;
     outline: none;
     overflow: hidden;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   
   .icon {
@@ -260,7 +260,7 @@ nav .wrapper{
     color:var(--primary-color);
     font-weight: 800;
     padding: 0.7em 0em 0.2em 0em;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 .headingTwo {
@@ -360,7 +360,7 @@ nav .wrapper{
 }
 
 .textsymbolLock > h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: var(--primary-font);
   color: #BFA324;
   /* background-color: green; */
@@ -368,7 +368,7 @@ nav .wrapper{
 }
 
 .wrapper p {
-  font-size: 1.25em;
+  font-size: 0.9em;
   line-height: 1.5;
   font-family: "Palatino Linotype";
   font-style: italic;
