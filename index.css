@@ -40,7 +40,7 @@ body {
     width: 80%;
     min-height: 150px;
     max-height: 550px;
-    margin: 10px auto;
+    margin: 0px auto;
     background: #f3f3f3;
     position: relative;
     z-index: 103;
