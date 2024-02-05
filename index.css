@@ -93,13 +93,13 @@ html {
     margin: 0;
 }
 .LSquote { 
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-family: "Palatino Linotype";
     font-style: italic;
     font-variant: normal;
     font-weight: 800;
     color: #BFA324;
-    padding: 17rem 0.5rem 6rem 0.5rem;
+    padding: 17rem 0.5rem 4rem 0.5rem;
     text-align: center;
     /* line-height: 26.4px; */
 }
