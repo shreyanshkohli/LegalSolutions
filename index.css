@@ -338,7 +338,7 @@ nav .wrapper{
   counter-reset: card;
   position: relative;
   display: block;
-  padding-bottom: 50vh;
+  padding-bottom: 41vh;
   margin-top: 1.5rem;
 }
 
@@ -352,7 +352,7 @@ nav .wrapper{
   position: sticky;
   top: max(16vh, 10em);
   padding: 0em 1.5em;
-  min-height: 19em;
+  min-height: 11em;
   background: white;
   box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
   width: calc(100% - 5 * var(--offset));
