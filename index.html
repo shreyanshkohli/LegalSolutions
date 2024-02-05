@@ -16,6 +16,8 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
 
 
@@ -23,7 +25,7 @@
         <!--DISCLAIMER-->
         <div class='popup-onload'>
             <div class='cnt223'>
-              <h3 class="headingOne">DISCLAIMER</h3>
+              <h3 class="headingTwo">DISCLAIMER</h3>
             <p>
               Current rules of the Bar Council of India impose restrictions on maintaining a web page and do not permit lawyers or advocates to provide information concerning their areas of practice. Legal Solutions/ its owner(s)/admin(s) are, therefore, constrained from providing any further information on this web page.<br><br>
  
@@ -47,7 +49,7 @@
                 <!--NAVBAR-->
             <nav>
                 <div class="wrapper">
-                  <div class="logo"><a href="#"><img src="https://github.com/shreyanshkohli/LegalSolutions/blob/main/Logo.png?raw=true" width="250"></a></div>
+                  <div class="logo"><a href="#"><img src="\Home Page\Images\Logo.png" width="250"></a></div>
                   <input type="radio" name="slider" id="menu-btn">
                   <input type="radio" name="slider" id="close-btn">
                   <ul class="nav-links">
@@ -60,34 +62,48 @@
                 </div>
               </nav>
 
-              <h1 class="LSquote">One-Stop Solution to all your Legal Needs.</h1>
+              <div data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="LSquote">One-Stop Solution to all your Legal Needs.</h1>
+                <center>
+                  <button class="button">
+                    Seek Consultation
+                  </button>
+                </center>
+              </div>
 
-              <center>
-              <button class="button">
-                Seek Consultation
-              </button>
-            </center>
             </div>
         </div>
         <!--WHO WE ARE-->
         <div name="Home Page About Section" class="homePageAbout">
-            <img src="https://github.com/shreyanshkohli/LegalSolutions/blob/main/Mr.%20Charanpreet%20Singh.JPG?raw=true" class="charanpreetImg" alt="Mr. Charanpreet Singh" />
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <img src="\Home Page\Images\Mr. Charanpreet Singh.JPG" class="charanpreetImg" alt="Mr. Charanpreet Singh" />
+          </div>
 
             <div class="aboutContainer">
                 <center>
-                    <h1 class="headingOne">WHO WE ARE</h1>
+                  <div data-aos="fade-left">
+                    <h1 class="headingOne">WHO ARE WE</h1>
+                  </div>
+                    
+                  <div data-aos="fade-up" data-aos-duration="300">
                     <p class="whoWeAreP">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, a quo deleniti sint odio odit voluptatibus ea officia laudantium ut rerum ullam enim. Adipisci reiciendis aut fugiat consequatur quaerat corporis vel voluptate eos unde neque id accusamus rerum, rem temporibus suscipit dolorum hic nisi illum distinctio explicabo delectus asperiores pariatur velit inventore? Amet, animi mollitia. Ut dolorum voluptas dolor ex cupiditate rerum debitis aperiam, molestiae </p>
+                  </div>
+                    
                 </center>
                 <div class="LTBadges">
+                  <div data-aos="fade-right">
                     <div class="trust">
-                        <lord-icon src="https://cdn.lordicon.com/btwwvffp.json" trigger="hover" style="width:100px;height:100px">
-                        </lord-icon>
-                        <div class="BadgeBox">
-                            <h3 class="BadgeHead">TRUST</h3>
-                            <p class="BadgeContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, adipisci?</p>
-                        </div>
-                    </div><br>
-                    <div class="loyalty">
+                      <lord-icon src="https://cdn.lordicon.com/btwwvffp.json" trigger="hover" style="width:100px;height:100px">
+                      </lord-icon>
+                      <div class="BadgeBox">
+                          <h3 class="BadgeHead">TRUST</h3>
+                          <p class="BadgeContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, adipisci?</p>
+                      </div>
+                  </div>
+                  </div>
+                    <br>
+                    <div data-aos="fade-left">
+                      <div class="loyalty">
                         <lord-icon src="https://cdn.lordicon.com/zbbefawl.json" trigger="hover"
                         style="width:100px;height:100px">
                         </lord-icon>
@@ -96,13 +112,17 @@
                             <p class="BadgeContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, adipisci?</p>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>    
 
+
         <!--WHY CHOOSE US-->
         <div class="metricsContainer">
+          <div data-aos="zoom-in-up">
             <h1 class="headingOne">WHY CHOOSE US</h1>
+          </div>
             
             <div class="wrapper">
   
@@ -142,7 +162,9 @@
         <!--OUR PRACTICES-->
 
         <div class="practiceAreaContainer">
+          <div data-aos="fade-up-right">
             <h1 class="headingOne">OUR PRACTICE AREAS</h1>
+          </div>
             <center>
 
             <div class="swiper mySwiper">
@@ -264,7 +286,7 @@
 <!--FOOTER-->
 <footer>
   <center>
-    <img src="https://github.com/shreyanshkohli/LegalSolutions/blob/main/Logo.png?raw=true" alt="logo"  width="350" class="footerLogo"/>
+    <img src="\Home Page\Images\Logo.png" alt="logo"  width="350" class="footerLogo"/>
 
   <div class="linksContainerFooter">
     <p class="footerTexts"><a href="" target="_blank">About Us</a></p>
@@ -281,25 +303,26 @@
 
  
         <script>
-            $(function(){
-                var overlay = $('<div id="overlay"></div>');
-                overlay.show();
-                overlay.appendTo(document.body);
-                $('.popup-onload').show();
+            // $(function(){
+            //     var overlay = $('<div id="overlay"></div>');
+            //     overlay.show();
+            //     overlay.appendTo(document.body);
+            //     $('.popup-onload').show();
             
-                $('.close').click(function(){
-                    $('.popup-onload').hide();
-                    overlay.appendTo(document.body).remove();
-                    return false;
-                });
-                $('.x').click(function(){
-                    $('.popup').hide();
-                    overlay.appendTo(document.body).remove();
-                    return false;
-                });
-            });
+            //     $('.close').click(function(){
+            //         $('.popup-onload').hide();
+            //         overlay.appendTo(document.body).remove();
+            //         return false;
+            //     });
+            //     $('.x').click(function(){
+            //         $('.popup').hide();
+            //         overlay.appendTo(document.body).remove();
+            //         return false;
+            //     });
+            // });
 
 
+            AOS.init();
 
             var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
