@@ -351,7 +351,7 @@ nav .wrapper{
   color: black;
   position: sticky;
   top: max(16vh, 10em);
-  padding: 2em 1.5em;
+  padding: 0em 1.5em;
   min-height: 19em;
   background: white;
   box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
