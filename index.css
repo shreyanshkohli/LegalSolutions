@@ -76,7 +76,7 @@ body {
 
 /* HOMEPAGE */
 .home {
-    background-image: url("/Home Page/Images/Background.png");
+    background-image: url("https://github.com/shreyanshkohli/LegalSolutions/blob/main/Background.png?raw=true");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
