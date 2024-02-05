@@ -37,10 +37,10 @@ body {
     }
     .cnt223{
     min-width: 200px;
-    width: 70%;
+    width: 80%;
     min-height: 150px;
     max-height: 550px;
-    margin: 100px auto;
+    margin: 60px auto;
     background: #f3f3f3;
     position: relative;
     z-index: 103;
