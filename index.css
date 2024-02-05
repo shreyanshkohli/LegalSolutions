@@ -41,7 +41,7 @@ body {
     min-width: 200px;
     width: 100%;
     min-height: 150px;
-    max-height: 750px;
+    max-height: 75vh;
     margin: 0px auto;
     background: #f3f3f3;
     position: relative;
