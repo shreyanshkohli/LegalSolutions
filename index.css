@@ -41,7 +41,7 @@ body {
     min-width: 200px;
     width: 100%;
     min-height: 150px;
-    max-height: 75vh;
+    max-height: 80vh;
     margin: 0px auto;
     background: #f3f3f3;
     position: relative;
@@ -61,7 +61,10 @@ body {
     color: #BFA324;
     font-weight: bold;
     font-size: 2rem;
-        font-family: 'Palatino Linotype';
+    font-family: 'Palatino Linotype';
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 800;
     }
     .cnt223 .x{
     float: right;
