@@ -83,7 +83,7 @@ body, html {
 
 /* HOMEPAGE */
 .home {
-    background-image: url("https://github.com/shreyanshkohli/LegalSolutions/blob/main/Background.png?raw=true");
+    background-image: url("https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Background.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
