@@ -7,8 +7,11 @@
 * {
   box-sizing: border-box;
 }
-body {
-  background-color: whitesmoke;
+body, html {
+  background-color: whitesmoke !important;
+  padding: 0px;
+  width: 100%;
+  overflow-x: hidden !important ;
 }
 
 /* POPUP */
@@ -16,7 +19,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     background-color: #000;
     filter:alpha(opacity=70);
@@ -85,16 +88,16 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    height: 95vh;
-    width: auto;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
 .LSCover {
     background-color: rgba(0, 0, 0, 0.54);
     z-index: 80;
-    width: auto;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
@@ -112,7 +115,7 @@ body {
 nav{
   position: fixed;
   z-index: 99;
-  width: 100%;
+  width: 100vw;
   background: rgba(255, 255, 255, 0);
   font-family: var(--primary-font);
 }
@@ -126,6 +129,7 @@ nav .wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .wrapper .logo a{
   color: #BFA324;
@@ -348,10 +352,13 @@ nav .wrapper{
 
 .scroll-cards > .scroll-cards__item + .scroll-cards__item {
   margin-top: 40vh;
+  
 }
 
 .scroll-cards__item {
   --offset: 0.5em;
+  /* width: calc(100% - 5 * var(--offset)); */
+  width:85%;
   color: black;
   position: sticky;
   top: max(16vh, 10em);
@@ -359,7 +366,6 @@ nav .wrapper{
   min-height: 11em;
   background: white;
   box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
-  width: calc(100% - 5 * var(--offset));
   margin: 0px 1rem;
 }
 
@@ -451,7 +457,7 @@ If you use SASS you can shorten this one here like this:
 
 /*PRACTICE AREAS*/
 .practiceAreaContainer {
-  margin-top: -40vh;
+  /* margin-top: -40vh; */
   background-color: whitesmoke;
   margin-left: auto;
   margin-right: auto;
@@ -549,87 +555,7 @@ If you use SASS you can shorten this one here like this:
   }
 
 
-  /* TESTIMONIALS */
-  .testimonial-container {
-    background-color: #476ce4;
-    color: white;
-    border-radius: 15px;
-    margin: 20px auto;
-    padding: 50px 80px;
-    max-width: 768px;
-    position: relative;
-  }
-  
-  .fa-quote {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 28px;
-    position: absolute;
-    top: 70px;
-  }
-  
-  .fa-quote-left {
-    left: 40px;
-  }
-  
-  .fa-quote-right {
-    right: 40px;
-  }
-  
-  .testimonial {
-    line-height: 28px;
-    text-align: justify;
-  }
-  
-  .user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .user .user-image {
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    object-fit: cover;
-  }
-  
-  .user .user-details {
-    margin-left: 10px;
-  }
-  
-  .user .username {
-    margin: 0;
-  }
-  
-  .user .role {
-    font-weight: normal;
-    margin: 10px 0;
-  }
-  
-  .progress-bar {
-    background-color: white;
-    height: 4px;
-    width: 100%;
-    animation: grow 10s linear infinite;
-    transform-origin: left;
-  }
-  
-  @keyframes grow {
-    0% {
-      transform: scaleX(0);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .testimonial-container {
-      padding: 20px 30px;
-    }
-  
-    .fa-quote {
-      display: none;
-    }
-  }
-  
+
 
 
   /* custom scroll bar */
@@ -637,10 +563,10 @@ If you use SASS you can shorten this one here like this:
     width: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: #242526;
+    background: whitesmoke;
   }
   ::-webkit-scrollbar-thumb {
-    background: #3A3B3C;
+    background: #ffffff;
   }
   #menu-btn:checked ~ .nav-links{
     left: 0%;
@@ -757,6 +683,129 @@ nav input{
     flex-direction: row;
 } */
 
+/* TESTIMONIALS */
+
+.testimonials {
+  background-color: whitesmoke;
+}
+.testimonialSlider-container {
+  overflow-x: auto; /* Always show scrollbar */
+  /* white-space: nowrap; */
+}
+.testimonialSlider {
+  display: flex;
+}
+.testimonialHeader {
+  display: flex;
+}
+.testimonialCard {
+  display: inline-block;
+  background-color: #ffffff;
+  /* border: 0.2px solid #000000; */
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  min-width: 300px ; /* Width of each card */
+  width: 20em;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nameAndDesignation {
+  margin-right: 2rem;
+
+}
+
+.testimonialHead {
+  font-family: var(--primary-font);
+  font-size: 1.3rem;
+}
+
+.testimonialDesignation {
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+}
+
+.testimonialParagraph {
+  min-width: 10px;
+  font-family: "Palatino Linotype";
+  font-style: italic;
+  font-variant: normal;
+  font-size: 1rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+/* GET IN TOUCH */
+.getInTouch {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 1500px;
+}
+.getInTouchAgain {
+  background-color: rgb(255, 255, 255);
+  margin: 3rem auto;
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.getInTouchContent {
+  padding: 3rem 0rem 4rem 0rem;
+  max-width: 600px;
+  margin: 0px auto;
+}
+.headingThree {
+  font-family: "Palatino Linotype";
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  color:#BFA324;
+  text-align: center;
+}
+.headingFour {
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
+  color:#BFA324;
+  text-align: center;
+  margin-top: 0px;
+  padding: 0px;
+}
+.getInTouchParagraph {
+  font-family: "Palatino Linotype";
+  font-style: italic;
+  font-variant: normal;
+  font-size: 1rem;
+  color:#BFA324;
+  text-align: center;
+  padding: 0rem 4rem;
+}
+.getInTouchContent  button {
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.getInTouchImg {
+  margin: 0 auto;
+}
+.getInTouchImg img {
+  width: 350px;
+  padding: 1rem 0rem;
+  margin: 0 auto;
+}
 
 /* FOOTER */
 .footerLogo {
@@ -786,3 +835,161 @@ footer a {
   color: #BFA324;
   text-decoration: none;
 }
+
+
+
+
+/* ABOUT US PAGE */
+.homeIntro {
+  background-image: url('Images/coverOthers.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homeIntroCover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.otherPagesTopHeading {
+  font-size: 2.8rem;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 800;
+  color: #BFA324;
+  padding: 6rem 0.5rem 4rem 0.5rem;
+  text-align: center;
+  font-family: "Palatino Linotype";
+}
+
+.mainInfoAboutUs {
+  background-color: whitesmoke;
+  padding: 2rem 2rem 1rem 2rem;
+  text-align: center;
+}
+.mainInfoAboutUsPara {
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+
+.aboutUsCharanpreet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.textHeadingAboutUsCharanpreet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.ourWorkPlace {
+  background-color: whitesmoke;
+  margin: 3rem 0rem;
+}
+
+/* CONTACT US */
+.addressNumberMail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  padding: 5rem 0rem;
+}
+.addressNumberMailCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  min-height: 180px;
+  min-width: 300px;
+  max-width: 400px;
+  border-radius: 10px;
+  width: 80%;
+}
+.iconAndName {
+  display: flex;
+  direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.iconAndName .headingOne {
+  padding-left: 0.9rem;
+  display: inline;
+}
+.addressNumberMailDeatil {
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-style: italic;
+  font-variant: normal;
+  font-family: "Palatino Linotype";
+}
+
+.contacUsFormBG {
+  background-image: url('Images/coverOthers.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 650px;
+}
+.contacUsFormBGCover {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 1rem;
+  min-height: 650px;
+}
+.actualForm {
+  /* background-color: whitesmoke; */
+  width: 90%;
+  height: 90%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.formInputs {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+#contacReview {
+  margin-bottom: 2rem;
+}
+
+/* PRACTICE AREAS */
+.practiceAreaCardsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0px;
+}
+.practiceAreaCardsContainer .service-card{
+  margin: 0rem 2rem 3rem 2rem;
+}
+
+/* DISCLAIMER */
+.disclaimerPara {
+  font-family: var(--primary-font);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+
