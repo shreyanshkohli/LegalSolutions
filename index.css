@@ -308,7 +308,7 @@ nav .wrapper{
   font-family: var(--primary-font);
   color: var(--primary-color);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .BadgeBox {
   direction: flex;
@@ -318,7 +318,7 @@ nav .wrapper{
 }
 .BadgeContent {
   text-align: center;
-  width: 13rem;
+  width: 14rem;
   font-family: "Palatino Linotype";
   font-style: italic;
   font-variant: normal;
