@@ -308,7 +308,7 @@ nav .wrapper{
   font-family: var(--primary-font);
   color: var(--primary-color);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .BadgeBox {
   direction: flex;
