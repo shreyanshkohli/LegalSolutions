@@ -20,19 +20,34 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
+      <!-- ChatBot Button -->
+<button id="chatBtn" class="chat-btn">
+  <i class="fa-solid fa-comments" style="color: #ffffff;"></i>
+</button>
+
+<!-- ChatBot Popover -->
+<div id="chatPopover" class="chat-popover">
+  <center>
+    <h3 class="chatHead">Chat with us</h3>
+  </center>
+  
+  <button id="closeChat" class="chat-close">&times;</button>
+  <div id="chatMessages" class="chat-messages"></div>
+  <input type="text" id="chatInput" class="chat-input" placeholder="Enter query...">
+</div>
 <!--ABOUT US HOME-->
       <div class="homeIntro">
 <!--NAVBAR-->
 <nav>
   <div class="wrapper">
-    <div class="logo"><a href="#"><img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Logo.png" width="250"></a></div>
+    <div class="logo"><a href="#"><img src="\Home Page\Images\Logo.png" width="250"></a></div>
     <input type="radio" name="slider" id="menu-btn">
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
     <label for="close-btn" class="btn close-btn"><i class="fa-solid fa-xmark" style="color: #BFA324;"></i></label>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html">About</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html">Practices</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html">Contact Us</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Practices</a></li>
+    <li><a href="#">Contact Us</a></li>
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fa-solid fa-bars" style="color: #BFA324;"></i></label>
   </div>
@@ -40,12 +55,15 @@
 
 <!--PAGE START-->
        <div class="homeIntroCover">
-        <h1 class="otherPagesTopHeading">CONTACT US</h1>
+        <div data-aos="fade-up">
+          <h1 class="otherPagesTopHeading">CONTACT US</h1>
+        </div>
        </div>
       </div>
 
 <!--ADDRESS, NUMBER, MAIL-->
 <div class="addressNumberMail">
+  <div data-aos="fade-up"></div>
     <div class="addressNumberMailCard">
         <div class="iconAndName">
             <i class="fa-solid fa-location-dot fa-2xl" style="color: #bfa324;"></i>
@@ -53,7 +71,7 @@
         <h1 class="headingOne">Address</h1>
         </div>
 
-        <p class="addressNumberMailDeatil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, voluptates!</p>
+        <p class="addressNumberMailDeatil">D-132, LGF, Saket, New Delhi - 110017</p>
     </div>
 
     <div class="addressNumberMailCard">
@@ -62,7 +80,7 @@
 
         <h1 class="headingOne">Phone</h1>
         </div>
-        <p class="addressNumberMailDeatil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, voluptates!</p>
+        <p class="addressNumberMailDeatil">8860577210</p>
     </div>
 
     <div class="addressNumberMailCard">
@@ -71,7 +89,7 @@
 
         <h1 class="headingOne">E-Mail</h1>
         </div>
-        <p class="addressNumberMailDeatil">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, voluptates!</p>
+        <p class="addressNumberMailDeatil">singh.charanpreet9@gmail.com</p>
     </div>
 </div>
 
@@ -106,14 +124,14 @@
 <!--FOOTER-->
 <footer>
     <center>
-      <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Logo.png" alt="logo"  width="350" class="footerLogo"/>
+      <img src="\Home Page\Images\Logo.png" alt="logo"  width="350" class="footerLogo"/>
   
     <div class="linksContainerFooter">
-      <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html" target="_blank">About Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html" target="_blank">Our Practices</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html" target="_blank">Contact Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/Disclaimer.html" target="_blank">Disclaimer</a></p>
-    <p class="footerTexts"><a href="#testimonials" target="_blank">Testimonials</a></p>
+      <p class="footerTexts"><a href="" target="_blank">About Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Our Practices</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Contact Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Disclaimer</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Testimonials</a></p>
     </div>
     <div class="footerEnd">©2024 All Rights Reserved.</div>
   
@@ -122,7 +140,57 @@
   <!-- End Footer -->
 
   <script>
+    AOS.init();
 
+    document.addEventListener("DOMContentLoaded", function() {
+      const chatBtn = document.getElementById('chatBtn');
+      const chatPopover = document.getElementById('chatPopover');
+      const chatInput = document.getElementById('chatInput');
+      const chatMessages = document.getElementById('chatMessages');
+      const closeChatBtn = document.getElementById('closeChat');
+
+      // Show chat popover on button click
+      chatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'block';
+        chatInput.focus();
+      });
+
+      // Close chat popover
+      closeChatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'none';
+      });
+
+      // Listen for Enter key press
+      chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendMessage();
+        }
+      });
+
+      // Send message function
+      function sendMessage() {
+        const messageText = chatInput.value.trim();
+        if (messageText !== '') {
+          appendMessage('user', messageText);
+          chatInput.value = '';
+          chatInput.focus();
+          setTimeout(() => {
+            appendMessage('bot', "Hey there! Thanks for reaching out, feel free to contact us at 8860577210 or singh.charanpreet9@gmail.com");
+          }, 500); // Simulating bot reply after 0.5s (adjust as needed)
+        }
+      }
+
+      // Append message function
+      function appendMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('chat-message');
+        messageElement.classList.add(sender + '-message');
+        messageElement.textContent = message;
+        chatMessages.appendChild(messageElement);
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    });
   </script>
     </body>
 </html>
