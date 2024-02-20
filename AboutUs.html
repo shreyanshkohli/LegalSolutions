@@ -7,7 +7,7 @@
         <meta name="author" content="Shreyansh Kohli">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8" />
         <title>Legal Solutions - Charanpreet Singh</title>
-        <link rel="stylesheet" href="https://shreyanshkohli.github.io/LegalSolutions/index.css">
+        <link rel="stylesheet" href="\index.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src='https://code.jquery.com/jquery-1.8.2.js'></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -21,18 +21,34 @@
     </head>
     <body>
 <!--ABOUT US HOME-->
+
+<!-- ChatBot Button -->
+<button id="chatBtn" class="chat-btn">
+  <i class="fa-solid fa-comments" style="color: #ffffff;"></i>
+</button>
+
+<!-- ChatBot Popover -->
+<div id="chatPopover" class="chat-popover">
+  <center>
+    <h3 class="chatHead">Chat with us</h3>
+  </center>
+  
+  <button id="closeChat" class="chat-close">&times;</button>
+  <div id="chatMessages" class="chat-messages"></div>
+  <input type="text" id="chatInput" class="chat-input" placeholder="Enter query...">
+</div>
       <div class="homeIntro">
 <!--NAVBAR-->
 <nav>
   <div class="wrapper">
-    <div class="logo"><a href="#"><img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Logo.png" width="250"></a></div>
+    <div class="logo"><a href="#"><img src="\Home Page\Images\Logo.png" width="250"></a></div>
     <input type="radio" name="slider" id="menu-btn">
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
     <label for="close-btn" class="btn close-btn"><i class="fa-solid fa-xmark" style="color: #BFA324;"></i></label>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html">About</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html">Practices</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html">Contact Us</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Practices</a></li>
+    <li><a href="#">Contact Us</a></li>
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fa-solid fa-bars" style="color: #BFA324;"></i></label>
   </div>
@@ -40,151 +56,183 @@
 
 <!--PAGE START-->
        <div class="homeIntroCover">
-        <h1 class="otherPagesTopHeading">ABOUT US</h1>
+        <div data-aos="fade-up">
+          <h1 class="otherPagesTopHeading">ABOUT US</h1>
+        </div>
        </div>
       </div>
 
 <!--ABOUT US TEXT-->
 <div class="mainInfoAboutUs">
-  <p class="mainInfoAboutUsPara whoWeAreP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quod dolore omnis adipisci quibusdam illo obcaecati non veniam explicabo voluptas doloremque atque consectetur cupiditate voluptatem ab, harum repudiandae, corrupti reiciendis enim minima? Quam odit, fugiat facilis rem vel minima rerum ipsa quia hic optio laborum assumenda quasi iure delectus reprehenderit suscipit. Quam laboriosam illo illum. Delectus, alias modi in, minima dignissimos quibusdam placeat iure, sit ipsa ratione doloremque repellat? Doloribus excepturi fugiat labore quis architecto suscipit, eos maxime, molestias enim animi unde, rerum fugit quia nisi provident. Deserunt, esse aspernatur! Debitis perferendis quasi, doloribus deleniti culpa nihil distinctio assumenda mollitia.</p>
+  <div data-aos="fade-right">
+    <p class="mainInfoAboutUsPara whoWeAreP">Welcome to Legal Solutions, where we are dedicated to providing exceptional legal services tailored to meet your unique needs. With a team of experienced and knowledgeable attorneys, we strive to deliver personalized solutions and steadfast representation in a wide range of legal matters. At Legal Solutions, our mission is to empower our clients by offering comprehensive legal guidance and advocacy. Whether you are facing a complex litigation issue, seeking assistance with business transactions, or navigating family law matters, we are here to help you every step of the way. With a commitment to integrity, professionalism, and excellence, our firm is focused on achieving the best possible outcomes for our clients. We understand that legal issues can be daunting, which is why we make it our priority to provide clear communication, honest advice, and strategic legal solutions..</p>
+  </div>
+  
 
-  <div class="aboutUsCharanpreet">
-    <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Mr.%20Charanpreet%20Singh.JPG" alt="Mr. Charanpreet Singh" class="charanpreetImg"/>
-    <div class="textHeadingAboutUsCharanpreet">
-      <h1 class="headingOne">Mr. Charanpreet Singh</h1>
-      <p class="whoWeAreP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab maiores, temporibus quidem ipsum animi odio vitae quisquam voluptatem quos? Nostrum at numquam nulla, quia nesciunt incidunt deserunt cupiditate delectus quaerat velit sunt, unde debitis illo nemo aspernatur atque officia est ipsum ullam id quasi cumque sint aperiam voluptatum. Quos, quo.</p>
+  <div name="About Page About Section" class="AboutPageAbout">
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Mr.%20Charanpreet%20Singh.JPG" class="charanpreetImg" alt="Mr. Charanpreet Singh" />
+    </div>
+
+      <div class="aboutContainer">
+          <center>
+            <div data-aos="fade-left">
+              <h1 class="headingOne">WHO ARE WE</h1>
+            </div>
+              
+            <div data-aos="fade-up" data-aos-duration="300">
+              <p class="whoWeAreP">Welcome to Legal Solutions, where we are dedicated to providing exceptional legal services tailored to meet your unique needs. With a team of experienced and knowledgeable attorneys, we strive to deliver personalized solutions and steadfast representation in a wide range of legal matters. At Legal Solutions, our mission is to empower our clients by offering comprehensive legal guidance and advocacy. Whether you are facing a complex litigation issue, seeking assistance with business transactions, or navigating family law matters, we are here to help you every step of the way. With a commitment to integrity, professionalism, and excellence, our firm is focused on achieving the best possible outcomes for our clients. We understand that legal issues can be daunting, which is why we make it our priority to provide clear communication, honest advice, and strategic legal solutions. </p>
+            </div>
+
+     
     </div>
   </div>
 </div>
 
   <!-- OUR WORKPLACE -->
   <div class="ourWorkPlace">
-    <h1 class="headingOne">OUR WORKPLACE</h1>
+    <div data-aos="fade-up-right">
+      <h1 class="headingOne">OUR WORKPLACE</h1>
+    </div>
 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
+    <div data-aos="fade-right">
+      <div class="container">
+        <div class="gallery">
+          <div class="gallery__item gallery__item--hor">
+            <img src="\Images\1.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\2.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\3.jpg" alt="">
+          </div>
+          <div class="gallery__item gallery__item--vert">
+            <img src="\Images\4.jpg" alt="">
+          </div>
+          <div class="gallery__item gallery__item--lg">
+            <img src="\Images\15.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\6.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\5.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\7.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\8.jpg" alt="">
+          </div>
+          <div class="gallery__item">
+            <img src="\Images\11.jpg" alt="">
+          </div>
         </div>
       </div>
+    </div>
     </div>
 
   </div>
   
 <!--TESTIMONIALS-->
 <div class="testimonials">
-  <h1 class="headingOne">WHAT OUR CLIENTS SAY</h1>
-  <div class="testimonialSlider-container">
-    <div class="testimonialSlider">
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
+  <div data-aos="fade-up-left">
+    <h1 class="headingOne">TESTIMONIALS</h1>
+  </div>
+  
+  <div data-aos="fade-left">
+    <div class="testimonialSlider-container">
+      <div class="testimonialSlider">
+  
+      <div class="testimonialCard">
+        <div class="testimonialHeader">
+          <div class="nameAndDesignation">
+            <h1 class="testimonialHead">Priya Patel</h1>
+          </div>
+        <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
+        </lord-icon>
         </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
+  
+        <p class="testimonialParagraph">"I am immensely grateful to the team at Legal Solutions for their exemplary legal assistance. Mr. Charanpreet and his associates demonstrated profound knowledge and dedication in handling my case. They provided me with clear guidance and support, ensuring that my rights were protected every step of the way. Thanks to their expertise, I was able to navigate through a challenging legal situation with confidence. I highly recommend Legal Solutions to anyone seeking reliable legal representation."</p>
       </div>
-
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
+  
+      <div class="testimonialCard">
+        <div class="testimonialHeader">
+          <div class="nameAndDesignation">
+            <h1 class="testimonialHead">Rahul Desai</h1>
+          </div>
+        <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
+        </lord-icon>
         </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
+  
+        <p class="testimonialParagraph">"I cannot thank Legal Solutions enough for their outstanding service. From the moment I contacted them, Mr. Charanpreet and her team displayed professionalism and empathy towards my situation. They meticulously guided me through the legal process, keeping me informed and empowered throughout. Their expertise and commitment led to a successful resolution of my case. I wholeheartedly endorse Legal Solutions for anyone in need of legal assistance."</p>
       </div>
+  
+      <div class="testimonialCard">
+        <div class="testimonialHeader">
+          <div class="nameAndDesignation">
+            <h1 class="testimonialHead">Neha Singh</h1>
 
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
+          </div>
+        <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
+        </lord-icon>
         </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
+  
+        <p class="testimonialParagraph">"Mr. Charanpreet and his team at Legal Solutions provided me with exceptional legal support during a challenging time. Their profound understanding of the law, coupled with their personalized approach, gave me confidence in the outcome of my case. They were responsive, proactive, and always had my best interests at heart. Thanks to their efforts, I was able to achieve a favorable result. I highly recommend Legal Solutions to anyone seeking reliable and compassionate legal representation."</p>
       </div>
+  
+      <div class="testimonialCard">
+        <div class="testimonialHeader">
+          <div class="nameAndDesignation">
+            <h1 class="testimonialHead">Vikram Sharma</h1>
 
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
+          </div>
+        <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
+        </lord-icon>
         </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
+  
+        <p class="testimonialParagraph">"I am incredibly thankful to Legal Solutions for their unwavering support and expertise. Mr. Charanpreet and his associates demonstrated a deep commitment to my case, leaving no stone unturned in pursuing justice on my behalf. They patiently addressed all my concerns and provided me with sound legal advice throughout the process. Their dedication and professionalism are truly commendable. I wholeheartedly endorse Legal Solutions to anyone in need of top-notch legal assistance."</p>
       </div>
-
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
+  
+      <div class="testimonialCard">
+        <div class="testimonialHeader">
+          <div class="nameAndDesignation">
+            <h1 class="testimonialHead">Ayesha Khan</h1>
+          </div>
+        <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
+        </lord-icon>
         </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
+  
+        <p class="testimonialParagraph">"Choosing [Legal Website] for my legal needs was the best decision I made. Ms. Kapoor and her team were not only knowledgeable but also compassionate towards my situation. They navigated me through the complexities of the legal system with ease, ensuring that my rights were protected at every turn. Thanks to their expertise and dedication, I was able to achieve a favorable outcome. I highly recommend [Legal Website] to anyone seeking reliable and trustworthy legal representation."</p>
       </div>
-
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-
-    <div class="testimonialCard">
-      <div class="testimonialHeader">
-        <div class="nameAndDesignation">
-          <h1 class="testimonialHead">Shreyansh Kohli</h1>
-        <p class="testimonialDesignation">Designation, Company</p>
-        </div>
-      <lord-icon src="https://cdn.lordicon.com/lmvawnca.json" trigger="in" delay="1000" state="in-reveal" colors="primary:#121331,secondary:#bfa324" style="width:50px;height:50px">
-      </lord-icon>
-      </div>
-
-      <p class="testimonialParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis commodi placeat, eaque at aspernatur odit illum sint doloribus iusto enim!</p>
-    </div>
-    </div>
-    </div>
+  
 
 </div>
 </div>
 
 <!--GET IN TOUCH-->
 <div class="getInTouch">
-  <div class="getInTouchAgain">
+  <div data-aos="fade-up">
+    <div class="getInTouchAgain">
 
-    <div class="getInTouchContent">
-      <p class="headingThree">Get In Touch</h1>
-      <p class="headingFour">REQUEST A CONSULTATION</p>
-      <p class="getInTouchParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste eligendi fugiat deserunt nesciunt ea id beatae tempora eos pariatur repudiandae?</p>
-      <center>
-        <button class="button">
-          Seek Consultation
-        </button>
-      </center>
+      <div class="getInTouchContent">
+        <p class="headingThree">Get In Touch</h1>
+        <p class="headingFour">REQUEST A CONSULTATION</p>
+        <p class="getInTouchParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste eligendi fugiat deserunt nesciunt ea id beatae tempora eos pariatur repudiandae?</p>
+        <center>
+          <button class="button">
+            Seek Consultation
+          </button>
+        </center>
+      </div>
+      <div class="getInTouchImg">
+        <img src="\Home Page\Images\getincontactimg.jpg" alt="image" />
+      </div>
+  
     </div>
-    <div class="getInTouchImg">
-      <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/getincontactimg.jpg" alt="image" />
-    </div>
-
   </div>
+  
 </div>
 
 
@@ -193,14 +241,14 @@
 <!--FOOTER-->
 <footer>
     <center>
-      <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Logo.png" alt="logo"  width="350" class="footerLogo"/>
+      <img src="\Home Page\Images\Logo.png" alt="logo"  width="350" class="footerLogo"/>
   
     <div class="linksContainerFooter">
-      <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html" target="_blank">About Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html" target="_blank">Our Practices</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html" target="_blank">Contact Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/Disclaimer.html" target="_blank">Disclaimer</a></p>
-    <p class="footerTexts"><a href="#testimonials" target="_blank">Testimonials</a></p>
+      <p class="footerTexts"><a href="" target="_blank">About Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Our Practices</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Contact Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Disclaimer</a></p>
+
     </div>
     <div class="footerEnd">©2024 All Rights Reserved.</div>
   
@@ -209,7 +257,57 @@
   <!-- End Footer -->
 
   <script>
+    AOS.init();
 
+    document.addEventListener("DOMContentLoaded", function() {
+      const chatBtn = document.getElementById('chatBtn');
+      const chatPopover = document.getElementById('chatPopover');
+      const chatInput = document.getElementById('chatInput');
+      const chatMessages = document.getElementById('chatMessages');
+      const closeChatBtn = document.getElementById('closeChat');
+
+      // Show chat popover on button click
+      chatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'block';
+        chatInput.focus();
+      });
+
+      // Close chat popover
+      closeChatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'none';
+      });
+
+      // Listen for Enter key press
+      chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendMessage();
+        }
+      });
+
+      // Send message function
+      function sendMessage() {
+        const messageText = chatInput.value.trim();
+        if (messageText !== '') {
+          appendMessage('user', messageText);
+          chatInput.value = '';
+          chatInput.focus();
+          setTimeout(() => {
+            appendMessage('bot', "Hey there! Thanks for reaching out, feel free to contact us at 8860577210 or singh.charanpreet9@gmail.com");
+          }, 500); // Simulating bot reply after 0.5s (adjust as needed)
+        }
+      }
+
+      // Append message function
+      function appendMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('chat-message');
+        messageElement.classList.add(sender + '-message');
+        messageElement.textContent = message;
+        chatMessages.appendChild(messageElement);
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    });
   </script>
     </body>
 </html>
