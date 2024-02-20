@@ -20,6 +20,21 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
+        <!-- ChatBot Button -->
+<button id="chatBtn" class="chat-btn">
+    <i class="fa-solid fa-comments" style="color: #ffffff;"></i>
+  </button>
+  
+  <!-- ChatBot Popover -->
+  <div id="chatPopover" class="chat-popover">
+    <center>
+      <h3 class="chatHead">Chat with us</h3>
+    </center>
+    
+    <button id="closeChat" class="chat-close">&times;</button>
+    <div id="chatMessages" class="chat-messages"></div>
+    <input type="text" id="chatInput" class="chat-input" placeholder="Enter query...">
+  </div>
 <!--ABOUT US HOME-->
       <div class="homeIntro">
 <!--NAVBAR-->
@@ -30,9 +45,9 @@
     <input type="radio" name="slider" id="close-btn">
     <ul class="nav-links">
     <label for="close-btn" class="btn close-btn"><i class="fa-solid fa-xmark" style="color: #BFA324;"></i></label>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html">About</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html">Practices</a></li>
-    <li><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html">Contact Us</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Practices</a></li>
+    <li><a href="#">Contact Us</a></li>
     </ul>
     <label for="menu-btn" class="btn menu-btn"><i class="fa-solid fa-bars" style="color: #BFA324;"></i></label>
   </div>
@@ -40,104 +55,235 @@
 
 <!--PAGE START-->
        <div class="homeIntroCover">
-        <h1 class="otherPagesTopHeading">PRACTICE AREAS</h1>
+        <div data-aos="fade-up">
+            <h1 class="otherPagesTopHeading">PRACTICE AREAS</h1>
+        </div>
        </div>
       </div>
 
 <!--PRACTICE AREA CARDS-->
 <div class="practiceAreaCardsContainer">
-    <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">01</p> 
-        </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">02</p> 
-        </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">03</p> 
-        </div>
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;">
+        </lord-icon>
+        <p class="practiceHeads">
+            CIVIL LAW
+        </p>
+        <p class="practiceText">
+          Civil law aims to provide resolutions through compensation or equitable remedies, guided by statutes and legal precedents.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">01</p> 
+    </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">04</p> 
-        </div>
+                <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+                    <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+                    </lord-icon>
+                    <p class="practiceHeads">
+                        CRIMINAL LAW
+                    </p>
+                    <p class="practiceText">
+                      Criminal law governs offenses against society, prosecuting individuals for crimes such as theft, assault, and murder.
+                    </p>
+                    <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">02</p> 
+                </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">05</p> 
-        </div>
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            FAMILY LAW
+        </p>
+        <p class="practiceText">
+          Family law encompasses legal matters related to familial relationships, including marriage, divorce, child custody, adoption, and domestic violence.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">03</p> 
+    </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">06</p> 
-        </div>
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            CONTRACTUAL LAW
+        </p>
+        <p class="practiceText">
+          Contract law regulates agreements between parties, ensuring the enforceability and interpretation of contracts regarding obligations, rights, and remedies, guided by legal principles and precedents.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">04</p> 
+    </div>
 
-        <div class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
-            <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
-            </lord-icon>
-            <p class="practiceHeads">
-                LOREM IPSUM
-            </p>
-            <p class="practiceText">
-                Website ravida surna eveti semen the conse tusio anivite dianne one nivam
-                acestion vue artin dictum.
-            </p>
-            <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">07</p> 
-        </div>
-            
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            NEGOTIABLE INSTRUMENTS
+        </p>
+        <p class="practiceText">
+          Negotiable instruments law governs transactions involving commercial paper, such as checks, promissory notes, and bills of exchange, facilitating the transfer of rights and obligations between parties.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">05</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            REAL ESTATE & PROPERTY LAW
+        </p>
+        <p class="practiceText">
+          Real estate and property law regulates the rights, interests, and transactions related to land, buildings, and assets.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">06</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            COMMERCIAL LAW
+        </p>
+        <p class="practiceText">
+          Commercial law oversees business transactions and activities, including contracts, sales, finance, and corporate governance.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">07</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            INTELLECTUAL PROPERTY LAW
+        </p>
+        <p class="practiceText">
+          Intellectual property law safeguards creations of the mind, such as inventions, artistic works, trademarks, and trade secrets.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">08</p> 
+    </div>
+ 
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            CONSUMER LAW
+        </p>
+        <p class="practiceText">
+          Consumer law protects individuals in transactions with businesses, covering issues like product safety, fair advertising, warranties, and consumer rights.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">09</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            POSCO ACT
+        </p>
+        <p class="practiceText">
+          The POSCO Act, or Protection of Children from Sexual Offences Act, is legislation in India designed to safeguard children from sexual abuse and exploitation.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">10</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            PREVENTION OF CURRPTION ACT
+        </p>
+        <p class="practiceText">
+          The Prevention of Corruption Act is legislation aimed at combating corruption in public offices and institutions.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">11</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            ENVIORNMENT LAW
+        </p>
+        <p class="practiceText">
+          Environmental law encompasses legal frameworks that regulate human activities impacting the natural world, including air and water quality.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">12</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            CONSTITUTIONAL LAW
+        </p>
+        <p class="practiceText">
+          Constitutional law governs the interpretation and application of a country's constitution, defining the structure of government, allocation of powers, and protection of individual rights and freedoms.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">13</p> 
 </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            ADMINISTRATIVE LAW
+        </p>
+        <p class="practiceText">
+          Administrative law regulates the actions and decisions of administrative agencies, ensuring accountability, fairness, and adherence to legal standards in governmental operations. 
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">14</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            SERVICE & LABOUR LAW
+        </p>
+        <p class="practiceText">
+          Service and labor law governs the relationship between employers and employees, covering aspects such as employment contracts, wages, working conditions, and employee rights.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">15</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            INSURANCE & BANKING LAW
+        </p>
+        <p class="practiceText">
+          These laws ensure the stability and integrity of financial markets, promote transparency and accountability in financial services.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">16</p> 
+    </div>
+
+                <div
+        class="service-card w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+        <lord-icon src="https://cdn.lordicon.com/frdcvrcu.json" trigger="in" delay="500" colors="primary:#121331,secondary:#ffffff,tertiary:#e8b730" style="width:5rem;height:5rem;rem">
+        </lord-icon>
+        <p class="practiceHeads">
+            COMPANY LAW
+        </p>
+        <p class="practiceText">
+          Company law governs the formation, operation, and dissolution of companies, including corporations and other business entities.
+        </p>
+        <p style="-webkit-text-stroke: 1px gray;-webkit-text-fill-color: transparent;" class="text-5xl font-bold self-end">17</p> 
+    </div>
 
 <!--FOOTER-->
 <footer>
@@ -145,11 +291,10 @@
       <img src="https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/Logo.png" alt="logo"  width="350" class="footerLogo"/>
   
     <div class="linksContainerFooter">
-      <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/AboutUs.html" target="_blank">About Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/OurPractices.html" target="_blank">Our Practices</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/ContactUs.html" target="_blank">Contact Us</a></p>
-    <p class="footerTexts"><a href="https://shreyanshkohli.github.io/LegalSolutions/Disclaimer.html" target="_blank">Disclaimer</a></p>
-    <p class="footerTexts"><a href="#testimonials" target="_blank">Testimonials</a></p>
+      <p class="footerTexts"><a href="" target="_blank">About Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Our Practices</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Contact Us</a></p>
+      <p class="footerTexts"><a href="" target="_blank">Disclaimer</a></p>
     </div>
     <div class="footerEnd">©2024 All Rights Reserved.</div>
   
@@ -158,7 +303,57 @@
   <!-- End Footer -->
 
   <script>
+    AOS.init();
 
+    document.addEventListener("DOMContentLoaded", function() {
+      const chatBtn = document.getElementById('chatBtn');
+      const chatPopover = document.getElementById('chatPopover');
+      const chatInput = document.getElementById('chatInput');
+      const chatMessages = document.getElementById('chatMessages');
+      const closeChatBtn = document.getElementById('closeChat');
+
+      // Show chat popover on button click
+      chatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'block';
+        chatInput.focus();
+      });
+
+      // Close chat popover
+      closeChatBtn.addEventListener('click', function() {
+        chatPopover.style.display = 'none';
+      });
+
+      // Listen for Enter key press
+      chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          sendMessage();
+        }
+      });
+
+      // Send message function
+      function sendMessage() {
+        const messageText = chatInput.value.trim();
+        if (messageText !== '') {
+          appendMessage('user', messageText);
+          chatInput.value = '';
+          chatInput.focus();
+          setTimeout(() => {
+            appendMessage('bot', "Hey there! Thanks for reaching out, feel free to contact us at 8860577210 or singh.charanpreet9@gmail.com");
+          }, 500); // Simulating bot reply after 0.5s (adjust as needed)
+        }
+      }
+
+      // Append message function
+      function appendMessage(sender, message) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('chat-message');
+        messageElement.classList.add(sender + '-message');
+        messageElement.textContent = message;
+        chatMessages.appendChild(messageElement);
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    });
   </script>
     </body>
 </html>
