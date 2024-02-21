@@ -243,9 +243,9 @@ nav .wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 40px 40px 50px 40px ;
+    padding: 40px 60px 50px 60px ;
     background-color: whitesmoke;
 }
 
@@ -260,7 +260,7 @@ nav .wrapper{
     justify-content: left;
     align-items: center;
     background-color: whitesmoke;
-    max-width: 700px; 
+    max-width: 500px; 
     padding: 1rem;
 }
 .headingOne {
@@ -288,6 +288,7 @@ nav .wrapper{
     font-style: italic;
     font-variant: normal;
     padding: 0em 0.25em;
+    font-size: 1.1rem;
 }
 
 .LTBadges {
