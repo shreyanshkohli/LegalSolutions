@@ -733,8 +733,19 @@ nav input{
   font-family: var(--primary-font);
   font-size: 0.9rem;
 }
-
-.testimonialParagraph {
+.testimonialHeadAdd {
+  font-family: var(--primary-font);
+  color: #BFA324;
+  font-size: 1.7rem;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.testimonialParagraphLast {
+  text-align: center;
+  font-size: 1.2rem !important;
+}
+.testimonialParagraph , .testimonialParagraphLast {
   min-width: 10px;
   font-family: "Palatino Linotype";
   font-style: italic;
