@@ -954,7 +954,16 @@ footer a {
   font-variant: normal;
   font-family: "Palatino Linotype";
 }
-
+.feedbackFormBG {
+  margin-top: 5rem;
+  /* background-image: url('Images/coverOthers.jpg'); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 600px;
+}
 .contacUsFormBG {
   background-image: url('https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/coverOthers.jpg');
   background-position: center;
