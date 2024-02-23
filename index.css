@@ -261,7 +261,7 @@ nav .wrapper{
     align-items: center;
     background-color: whitesmoke;
     max-width: 500px; 
-    padding: 1rem;
+    padding: 1rem 0rem;
 }
 .headingOne {
     font-family: var(--primary-font);
@@ -956,7 +956,7 @@ footer a {
 }
 .feedbackFormBG {
   margin-top: 5rem;
-  /* background-image: url('Images/coverOthers.jpg'); */
+  background-image: url('https://raw.githubusercontent.com/shreyanshkohli/LegalSolutions/main/feedbackForm.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
