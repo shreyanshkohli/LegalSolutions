@@ -303,7 +303,7 @@ nav .wrapper{
   flex-direction: row;
   margin: 0.2rem 0rem;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-around;
 }
 .BadgeHead {
   font-family: var(--primary-font);
